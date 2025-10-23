@@ -1,19 +1,21 @@
-# Sequence
+# Indovina il Colore
 
-A new Flutter project created with FlutLab - https://flutlab.io
+Un semplice gioco in **Flutter** dove devi indovinare la sequenza corretta di colori. Ogni volta che premi sui cerchi colorati, il colore cambia. Quando pensi di aver trovato la combinazione giusta, premi il pulsante **"?"** per verificare se hai indovinato.
 
-## Getting Started
+## Funzionalità
 
-A few resources to get you started if this is your first Flutter project:
+### Generazione della Sequenza
+All'inizio del gioco, viene generata una sequenza casuale di 4 colori, che l'utente deve replicare. Ogni colore è rappresentato da un indice in una lista (`colorList`).
 
-- https://flutter.dev/docs/get-started/codelab
-- https://flutter.dev/docs/cookbook
+### Interazione dell'Utente
+L'utente può cliccare sui cerchi colorati (in basso) per cambiarne il colore. Ogni volta che l'utente clicca su un cerchio, il colore cambia in un ciclo (grigio → giallo → verde → blu → rosso → grigio, e così via).
 
-For help getting started with Flutter, view our
-https://flutter.dev/docs, which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Controllo della Sequenza
+Quando l'utente è pronto, può premere il pulsante con il simbolo **"?"** per verificare se la sequenza di colori scelta è corretta. Il codice confronta la sequenza dell'utente con quella generata all'inizio.
 
-## Getting Started: FlutLab - Flutter Online IDE
+### Feedback
+- **Sequenza corretta**: Se la sequenza è corretta, viene mostrato il messaggio **"BEA!"** e la sequenza viene resettata per iniziare una nuova partita.
+- **Sequenza errata**: Se la sequenza è sbagliata, viene mostrato il messaggio **"Sequenza non corretta"** e l'utente può riprovare.
 
-- How to use FlutLab? Please, view our https://flutlab.io/docs
-- Join the discussion and conversation on https://flutlab.io/residents
+### Reset e Nuova Sequenza
+Dopo ogni tentativo (giusto o sbagliato), i colori vengono resettati e viene generata una nuova sequenza casuale.
