@@ -1,7 +1,4 @@
-# Indovina il Colore
-
-Un semplice gioco in **Flutter** dove devi indovinare la sequenza corretta di colori. Ogni volta che premi sui cerchi colorati, il colore cambia. Quando pensi di aver trovato la combinazione giusta, premi il pulsante **"?"** per verificare se hai indovinato.
-
+Sequence
 ## Funzionalità
 
 ### Generazione della Sequenza
