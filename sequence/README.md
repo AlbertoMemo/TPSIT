@@ -1,4 +1,5 @@
-#Sequence
+# Sequence
+
 ## Funzionalità
 
 ### Generazione della Sequenza
