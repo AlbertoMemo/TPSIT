@@ -1,19 +1,24 @@
-# chrono
+# Chrono
 
-A new Flutter project created with FlutLab - https://flutlab.io
+1. **Ticker Stream**  
+   Genera un evento ogni 100 millisecondi. È la sorgente temporale del cronometro.
 
-## Getting Started
+2. **Gestione del tempo**  
+   Ogni evento incrementa `_ticks` solo se lo stato è *running*.  
+   I tick vengono poi convertiti in secondi e mostrati in formato `mm:ss.s`.
 
-A few resources to get you started if this is your first Flutter project:
+3. **Stati principali**  
+   - `MainState`: gestisce **START → STOP → RESET**  
+   - `PauseState`: gestisce **PAUSE ↔ RESUME**
 
-- https://flutter.dev/docs/get-started/codelab
-- https://flutter.dev/docs/cookbook
+4. **Funzioni principali**  
+   - `_start()`: avvia il ticker  
+   - `_stop()`: ferma il ticker  
+   - `_reset()`: azzera il tempo  
+   - `_togglePauseState()`: mette in pausa o riprende il conteggio
 
-For help getting started with Flutter, view our
-https://flutter.dev/docs, which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+5. **Interfaccia grafica**  
+   Mostra il tempo al centro e due **FloatingActionButton** in basso a destra:  
+   - uno per **START / STOP / RESET**  
+   - uno per **PAUSE / RESUME**
 
-## Getting Started: FlutLab - Flutter Online IDE
-
-- How to use FlutLab? Please, view our https://flutlab.io/docs
-- Join the discussion and conversation on https://flutlab.io/residents
