@@ -27,7 +27,7 @@ class ConnectPage extends StatefulWidget {
 }
 
 class _ConnectPageState extends State<ConnectPage> {
-  final _hostCtrl = TextEditingController(text: '127.0.0.1');
+  final _hostCtrl = TextEditingController(text: '192.168.3.3');
   final _portCtrl = TextEditingController(text: '4567');
   final _userCtrl = TextEditingController();
 
@@ -169,3 +169,4 @@ class _ChatPageState extends State<ChatPage> {
     );
   }
 }
+
