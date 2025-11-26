@@ -2,10 +2,10 @@ import 'dart:io';
 import 'dart:convert';
 
 Future<void> main() async {
-  final defaultHost = '127.0.0.1';
+  final defaultHost = '192.168.3.3';
   final port = 4567;
 
-  stdout.write('Enter server host (default 127.0.0.1): ');
+  stdout.write('Enter server host (default $defaultHost): ');
   final h = stdin.readLineSync();
   final serverHost = (h != null && h.isNotEmpty) ? h : defaultHost;
 
@@ -35,3 +35,4 @@ Future<void> main() async {
     if (text.isNotEmpty) socket.writeln(text);
   });
 }
+
