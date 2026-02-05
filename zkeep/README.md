@@ -1,46 +1,45 @@
 # am043 Todo List
 
-A Flutter todo list app inspired by Google Keep, featuring card-based organization.
+Un'app Flutter per liste di cose da fare ispirata a Google Keep, con organizzazione basata su card.
 
-## Features
+## Funzionalità
 
-- **Card-based organization**: Create multiple todo cards, each containing its own list of tasks
-- **Simple interactions**:
-  - Tap on a todo item to mark it as complete/incomplete
-  - Long press on a todo item to delete it
-  - Click the X button to delete an entire card
-- **Clean UI**: Minimal design with a grid layout for easy viewing of multiple cards
+- **Organizzazione a card**: Crea più card di todo, ognuna con la propria lista di attività
+- **Interazioni semplici**:
+  - Tocca un elemento todo per segnarlo come completato/non completato
+  - Tieni premuto su un elemento todo per eliminarlo
+  - Clicca il pulsante X per eliminare un'intera card
+- **UI pulita**: Design minimalista con layout a griglia per visualizzare facilmente più card
 
-## How to Use
+## Come Usare l'App
 
-1. **Create a new card**: Click the floating action button (+) at the bottom right
-2. **Add todos to a card**: Click the "add todo" button inside any card
-3. **Mark as complete**: Tap on any todo item to toggle completion status
-4. **Delete a todo**: Long press on any todo item
-5. **Delete a card**: Click the X button in the top right corner of any card
+1. **Crea una nuova card**: Clicca il pulsante di azione fluttuante (+) in basso a destra
+2. **Aggiungi todo a una card**: Clicca il pulsante "add todo" all'interno di qualsiasi card
+3. **Segna come completato**: Tocca qualsiasi elemento todo per cambiare lo stato di completamento
+4. **Elimina un todo**: Tieni premuto su qualsiasi elemento todo
+5. **Elimina una card**: Clicca il pulsante X nell'angolo in alto a destra di qualsiasi card
 
-## Project Structure
+## Struttura del Progetto
 
-lib/
--main.dart       # App entry point and home page
--model.dart      # Data models (TodoCard and Todo)
--notifier.dart   # State management with ChangeNotifier
--widgets.dart    # UI components (TodoCardWidget and TodoItem)
+-main.dart       # Punto di ingresso dell'app e home page
+-model.dart      # Modelli di dati (TodoCard e Todo)
+-notifier.dart   # Gestione dello stato con ChangeNotifier
+-widgets.dart    # Componenti UI (TodoCardWidget e TodoItem)
 
-## Dependencies
+## Dipendenze
 
 - `flutter/material.dart`
-- `provider` - State management
+- `provider` - Gestione dello stato
 
-## Getting Started
+## Come Iniziare
 
-1. Make sure you have Flutter installed
-2. Clone this repository
-3. Run `flutter pub get` to install dependencies
-4. Run `flutter run` to start the app
+1. Assicurati di avere Flutter installato
+2. Clona questo repository
+3. Esegui `flutter pub get` per installare le dipendenze
+4. Esegui `flutter run` per avviare l'app
 
-## Technical Details
+## Dettagli Tecnici
 
-- **State Management**: Uses Provider with ChangeNotifier pattern
-- **Layout**: GridView with 2 columns for card display
-- **Theme**: Red color scheme
+- **Gestione dello Stato**: Utilizza Provider con il pattern ChangeNotifier
+- **Layout**: GridView con 2 colonne per la visualizzazione delle card
+- **Tema**: Schema di colori rosso
