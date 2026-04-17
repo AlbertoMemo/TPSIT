@@ -27,6 +27,6 @@ Il progetto è diviso in due componenti principali:
 ### Step 1 — Definizione dell'idea e setup del repository
 **Data:** [26/03/2026]  
 **Descrizione:** Creazione del repository `consegna_finale`, stesura del README con titolo, abstract e struttura generale del progetto. 
-### Step 1 — Definizione dell'idea e setup del repository
+### Step 2 — Definizione dell'idea e setup del repository
 **Data:** [17/04/2026]  
 **Descrizione:** Creazione nuovo readme dato che il precedente era dentro una cartella sbagliata. Quasi completato il lato server. 
