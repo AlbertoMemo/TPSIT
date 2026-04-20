@@ -5,7 +5,7 @@
 
 ---
 
-## Abstract
+## Panoramica
 
 **Calcio Scout** è un'applicazione che permette di consultare schede dettagliate di giocatori e squadre del campionato di Bundesliga tedesca. L'app si appoggia a un servizio REST backend realizzato in PHP con database MySQL, che integra dati provenienti da un'API esterna gratuita (API-Football via RapidAPI) con dati gestiti internamente.
 
