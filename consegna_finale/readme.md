@@ -1,7 +1,7 @@
 
 # Calcio Scout
 
-**Creatore:** [Alberto Memo]  
+**Creatore:** Alberto Memo 
 
 ---
 
