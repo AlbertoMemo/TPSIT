@@ -33,4 +33,7 @@ Il progetto è diviso in due componenti principali:
 ### Step 3 — Completamento lato server.
 **Data:** [20/04/2026]  
 **Descrizione:** Lato server completato. 
+### Step 4 — Verifica funzionalità lato server.
+**Data:** [30/04/2026]  
+**Descrizione:** Creazione semplice client html per verificare la funzionalità del server. 
 
