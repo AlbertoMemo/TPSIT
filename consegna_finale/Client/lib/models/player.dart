@@ -6,7 +6,9 @@ class Player {
   final String groupTitle;
   final int teamId;
   final bool injured;
-  final String? expectedReturn;
+  final int age;
+  final int goals;
+  final int assists;
   bool isFavorite;
 
   Player({
@@ -17,25 +19,28 @@ class Player {
     required this.groupTitle,
     required this.teamId,
     this.injured = false,
-    this.expectedReturn,
+    this.age = 0,
+    this.goals = 0,
+    this.assists = 0,
     this.isFavorite = false,
   });
 
   factory Player.fromJson(Map<String, dynamic> j, String group, int teamId) => Player(
-        id: j['id'],
-        name: j['name'] ?? '',
+        id:          j['id'],
+        name:        j['name'] ?? '',
         shirtNumber: j['shirtNumber'] ?? 0,
-        role: j['role']?['fallback'] ?? '',
-        groupTitle: group,
-        teamId: teamId,
-        injured: j['injured'] == true,
-        expectedReturn: j['injury']?['expectedReturn'],
+        role:        j['role']?['fallback'] ?? '',
+        groupTitle:  group,
+        teamId:      teamId,
+        injured:     j['injured'] == true,
+        age:         j['age'] ?? 0,
+        goals:       j['goals'] ?? 0,
+        assists:     j['assists'] ?? 0,
       );
 
-  // initials
   String get initials {
     final parts = name.trim().split(' ');
-    if (parts.length == 1) return parts[0].substring(0, 1).toUpperCase();
+    if (parts.length == 1) return parts[0][0].toUpperCase();
     return (parts[0][0] + parts.last[0]).toUpperCase();
   }
 
@@ -50,10 +55,10 @@ class Player {
   }
 
   Map<String, dynamic> toDb() => {
-        'player_id': id,
-        'nome': firstName,
-        'cognome': lastName,
+        'player_id':     id,
+        'nome':          firstName,
+        'cognome':       lastName,
         'numero_maglia': shirtNumber,
-        'squadra_id': teamId,
+        'squadra_id':    teamId,
       };
 }
