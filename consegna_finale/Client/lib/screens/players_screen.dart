@@ -170,7 +170,6 @@ class _PlayersScreenState extends State<PlayersScreen> {
             _tf('Goal', goalsCtrl, kb: TextInputType.number),
             _tf('Assist', assistCtrl, kb: TextInputType.number),
             const SizedBox(height: 8),
-            // Ruolo
             DropdownButtonFormField<String>(
               value: roleTitle,
               dropdownColor: const Color(0xFF1E2230),
@@ -339,8 +338,6 @@ class _GroupHeader extends StatelessWidget {
     );
   }
 }
-
-/* =================== GRIGLIA =================== */
 
 class _PlayersGrid extends StatelessWidget {
   final List<Player> players;
