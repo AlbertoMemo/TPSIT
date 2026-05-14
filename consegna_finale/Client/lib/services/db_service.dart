@@ -16,13 +16,13 @@ class DbService {
     final path = join(await getDatabasesPath(), 'calcio.db');
     return openDatabase(
       path,
-      version: 2, // incrementata per aggiungere le tabelle di cache
+      version: 2, 
       onCreate: (db, _) async {
         await _createTables(db);
       },
       onUpgrade: (db, oldVersion, newVersion) async {
         if (oldVersion < 2) {
-          // Aggiunge le tabelle di cache se si aggiorna dalla v1
+          
           await db.execute('''
             CREATE TABLE IF NOT EXISTS cache_teams (
               cache_key   TEXT PRIMARY KEY,
